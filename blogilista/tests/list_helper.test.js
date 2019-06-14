@@ -97,5 +97,14 @@ describe('total likes', () => {
       __v: 0
     }])
   })
+
+  test('most blogs', () => {
+    const result = listHelper.mostBlogs(bigList)
+    expect(result).toStrictEqual([{
+      author: "Robert C. Martin",
+      blogs: 3
+    }])
+  })
+
 })
 
