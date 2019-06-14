@@ -106,5 +106,10 @@ describe('total likes', () => {
     }])
   })
 
+  test('most likes', ()=>{
+    const result = listHelper.mostLikes(bigList)
+    expect(result).toStrictEqual([{author: "Edsger W. Dijkstra", likes: 17}])
+  })
+
 })
 
